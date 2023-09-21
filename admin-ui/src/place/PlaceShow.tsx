@@ -19,7 +19,7 @@ export const PlaceShow = (props: ShowProps): React.ReactElement => {
         <TextField label="Name" source="name" />
         <TextField label="SortOf" source="sortOf" />
         <DateField source="updatedAt" label="Updated At" />
-        <ReferenceField label="User Key" source="user.id" reference="User">
+        <ReferenceField label="User Key" source="userKey.id" reference="User">
           <TextField source={USER_TITLE_FIELD} />
         </ReferenceField>
       </SimpleShowLayout>

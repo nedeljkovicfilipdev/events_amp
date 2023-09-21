@@ -1,52 +1,6 @@
 [
-  {
-    "role": "user",
-    "resource": "User",
-    "action": "read:own",
-    "attributes": "*"
-  },
-  {
-    "role": "admin",
-    "resource": "User",
-    "action": "read:own",
-    "attributes": "*"
-  },
-  {
-    "role": "user",
-    "resource": "User",
-    "action": "create:any",
-    "attributes": "*"
-  },
-  {
-    "role": "admin",
-    "resource": "User",
-    "action": "create:any",
-    "attributes": "*"
-  },
-  {
-    "role": "user",
-    "resource": "User",
-    "action": "update:any",
-    "attributes": "*"
-  },
-  {
-    "role": "admin",
-    "resource": "User",
-    "action": "update:any",
-    "attributes": "*"
-  },
-  {
-    "role": "user",
-    "resource": "User",
-    "action": "delete:any",
-    "attributes": "*"
-  },
-  {
-    "role": "admin",
-    "resource": "User",
-    "action": "delete:any",
-    "attributes": "*"
-  },
+  // Role: User
+  // Resource: User
   {
     "role": "user",
     "resource": "User",
@@ -54,65 +8,113 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "update:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "delete:own",
+    "attributes": "*"
+  },
+  // Role: Admin
+  // Resource: User
+  {
+    "role": "admin",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+
+  {
+    "role": "admin",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "User",
     "action": "read:any",
     "attributes": "*"
   },
-  {
-    "role": "user",
-    "resource": "Place",
-    "action": "read:own",
-    "attributes": "*"
-  },
-  {
-    "role": "admin",
-    "resource": "Place",
-    "action": "read:own",
-    "attributes": "*"
-  },
-  {
-    "role": "user",
-    "resource": "Place",
-    "action": "create:any",
-    "attributes": "*"
-  },
-  {
-    "role": "admin",
-    "resource": "Place",
-    "action": "create:any",
-    "attributes": "*"
-  },
-  {
-    "role": "user",
-    "resource": "Place",
-    "action": "update:any",
-    "attributes": "*"
-  },
-  {
-    "role": "admin",
-    "resource": "Place",
-    "action": "update:any",
-    "attributes": "*"
-  },
-  {
-    "role": "user",
-    "resource": "Place",
-    "action": "delete:any",
-    "attributes": "*"
-  },
-  {
-    "role": "admin",
-    "resource": "Place",
-    "action": "delete:any",
-    "attributes": "*"
-  },
+  // Role: User
+  // Resource: Place
   {
     "role": "user",
     "resource": "Place",
     "action": "read:any",
     "attributes": "*"
   },
+  {
+    "role": "user",
+    "resource": "Place",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Place",
+    "action": "update:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Place",
+    "action": "delete:own",
+    "attributes": "*"
+  },
+
+  // Role: Admin
+  // Resource: Place
+  {
+    "role": "admin",
+    "resource": "Place",
+    "action": "read:own",
+    "attributes": "*"
+  },
+
+  {
+    "role": "admin",
+    "resource": "Place",
+    "action": "create:any",
+    "attributes": "*"
+  },
+
+  {
+    "role": "admin",
+    "resource": "Place",
+    "action": "update:any",
+    "attributes": "*"
+  },
+
+  {
+    "role": "admin",
+    "resource": "Place",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+
   {
     "role": "admin",
     "resource": "Place",

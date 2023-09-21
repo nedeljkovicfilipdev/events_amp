@@ -26,6 +26,6 @@ model Place {
   name      String
   sortOf    String
   updatedAt DateTime @updatedAt
-  userKey   User?    @relation(fields: [ID], references: [id])
-  ID        String?  @unique
+  userKey   User?    @relation(fields: [PlaceID], references: [id])
+  PlaceID        String?  @unique
 }

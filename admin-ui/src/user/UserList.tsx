@@ -24,7 +24,7 @@ export const UserList = (props: ListProps): React.ReactElement => {
         <TextField label="First Name" source="firstName" />
         <TextField label="ID" source="id" />
         <TextField label="Last Name" source="lastName" />
-        <ReferenceField label="Place ID" source="place.id" reference="Place">
+        <ReferenceField label="Place ID" source="placeId.id" reference="Place">
           <TextField source={PLACE_TITLE_FIELD} />
         </ReferenceField>
         <TextField label="Roles" source="roles" />

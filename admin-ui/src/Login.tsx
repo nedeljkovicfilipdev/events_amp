@@ -21,11 +21,15 @@ const Login = ({ theme }: any) => {
     );
   };
 
+  const handleOnClick = (e: React.MouseEvent <HTMLButtonElement>) => {
+    console.log("You are in")
+  }
+
   return (
     <ThemeProvider theme={createTheme(defaultTheme)}>
       <div className={`${CLASS_NAME}`}>
         <div className={`${CLASS_NAME}__wrapper`}>
-          <div className={`${CLASS_NAME}__box`}>
+{/*           <div className={`${CLASS_NAME}__box`}>
             <img
               src="https://amplication.com/assets/graphql.png"
               alt="GraphQL API"
@@ -42,6 +46,16 @@ const Login = ({ theme }: any) => {
               href={`${BASE_URI}/graphql`}
             >
               Continue
+            </Button>
+          </div> */}
+          <div className={`${CLASS_NAME}__box`}>
+            <h2>Home UI</h2>
+            <div className={`${CLASS_NAME}__box__message`}>
+              Go to React-User client, and explore all the places which Belgrade has 
+              to offer for unforgetable experience
+            </div>
+            <Button onClick={handleOnClick} variant="contained" color="primary">
+              Explore
             </Button>
           </div>
           <div className={`${CLASS_NAME}__box`}>
@@ -80,7 +94,7 @@ const Login = ({ theme }: any) => {
               </Button>
             </form>
           </div>
-          <div className={`${CLASS_NAME}__box`}>
+{/*           <div className={`${CLASS_NAME}__box`}>
             <img
               src="https://amplication.com/assets/restapi.png"
               alt="REST API"
@@ -98,16 +112,12 @@ const Login = ({ theme }: any) => {
             >
               Continue
             </Button>
-          </div>
+          </div> */}
 
           <Notification />
         </div>
         <div className={`${CLASS_NAME}__read-more`}>
-          <span>Read </span>
-          <a href="https://docs.amplication.com/api" target="docs">
-            Amplication docs
-          </a>
-          <span> to learn more</span>
+          <span>Powered by 'Yet to be named' company</span>
         </div>
       </div>
     </ThemeProvider>

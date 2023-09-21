@@ -5,10 +5,13 @@ import "./index.css";
 // eslint-disable-next-line import/no-unresolved
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import {BrowserRouter as Router} from 'react-router-dom'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <App />
+    </Router>
   </React.StrictMode>,
   document.getElementById("root")
 );
